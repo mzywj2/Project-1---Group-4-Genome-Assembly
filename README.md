@@ -40,5 +40,11 @@ For more detailed explanations about each step of the process, refer to the foll
 - [Bandage Tutorial]  (): This video
 
 
-## Acknowledgments
+## Contributions
+If you found an issue or would like to submit an improvement to this project, please open an issue or submit a pull request.
 
+
+## Acknowledgments
+- Nanoplot:
+- Minimap 2:
+- Bandage:
