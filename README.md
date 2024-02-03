@@ -1,1 +1,3 @@
-# Project-1---Group-4-Genome-Assembly
+# Genome Assembly using Illumina and Nanopore data
+
+## 
