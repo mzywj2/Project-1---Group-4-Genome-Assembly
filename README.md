@@ -40,7 +40,7 @@ In addition to various plots, NanoPlot also creates a NanoPlot report which can 
 
 `python3 -m http.server 34567` - 34567 can be changed to your personalised 5 digit extension 
 
-To view the report go to your web browser a type:
+To view the report go to your web browser and type:
 
 http://10.102.161.12:34567  - which is the ip and the hpc extension
 
