@@ -8,11 +8,10 @@ Example name: *H3932_S4_L001_R1_001_fastqc.zip* and *H3932_S4_L001_R2_001_fastqc
 
 * H3932_S4 = Sample name
 
-L00* is the lane number i.e. 4 lanes were used
+* L00* is the lane number i.e. 4 lanes were used
 
-R1 means it is a forward strand
-
-R2 means it is a reverse strand
+* R1 means it is a forward strand
+* R2 means it is a reverse strand
 
 001 = The file number
 
