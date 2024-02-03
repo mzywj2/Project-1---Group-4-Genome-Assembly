@@ -13,7 +13,7 @@ You may need to upgrade the pip version:
 
 `pip install --upgrade pip`
 
-For further detail about NanoPlot, refer to the NnaoPlot GitHub Repository: https://github.com/wdecoster/NanoPlot.git
+For further detail about NanoPlot, refer to the NanoPlot GitHub Repository: https://github.com/wdecoster/NanoPlot.git
 
 ### Minimap2
 Minimap can be installed using conda:
