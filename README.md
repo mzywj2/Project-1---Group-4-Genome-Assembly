@@ -6,7 +6,7 @@ This project utilises both long-read (nanopore) data and short-read (illumina) d
 ### The Short-Read Data:
 Example name: *H3932_S4_L001_R1_001_fastqc.zip* and *H3932_S4_L001_R2_001_fastqc.gz*
 
-H3932_S4 = Sample name
+* H3932_S4 = Sample name
 
 L00* is the lane number i.e. 4 lanes were used
 
