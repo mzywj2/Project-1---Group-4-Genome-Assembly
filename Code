@@ -1,1 +1,2 @@
-
+# Log onto the hpc:
+ssh <username>@10.102.161.12 -i ~/.ssh/<ssh key>
