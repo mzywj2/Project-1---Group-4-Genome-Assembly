@@ -6,7 +6,7 @@ This project utilises both long-read (nanopore) data and short-read (illumina) d
 
 ### Nanoplot
 Nanoplot can be installed using pip:
-'pip install NanoPlot'
+`pip install NanoPlot`
 
 You may need to upgrade the pip version:
 pip install --upgrade pip
