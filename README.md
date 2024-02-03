@@ -6,16 +6,19 @@ This project utilises both long-read (nanopore) data and short-read (illumina) d
 
 ### Nanoplot
 Nanoplot can be installed using pip:
+
 `pip install NanoPlot`
 
 You may need to upgrade the pip version:
-pip install --upgrade pip
+
+`pip install --upgrade pip`
 
 For further detail about NanoPlot, refer to the NnaoPlot GitHub Repository: https://github.com/wdecoster/NanoPlot.git
 
 ### Minimap2
 Minimap can be installed using conda:
-conda install bioconda::minimap2
+
+`conda install bioconda::minimap2`
 
 For further detail about Minimap2, refer to the Minimap2 GitHub Repository: https://github.com/lh3/minimap2.git
 
@@ -23,7 +26,8 @@ For further detail about Minimap2, refer to the Minimap2 GitHub Repository: http
 Bandage can be installed using HomeBrew for OS or by downloading the binaries for other platforms, which can be found from the Bandage website (https://rrwick.github.io/Bandage/) or the Bandage GitHub Release Page (https://github.com/rrwick/Bandage/releases/). 
 
 For installation on OS using HomeBrew:
-brew install bandage
+
+`brew install bandage`
 
 For further detail about Bandage, refer to the Bandage GitHub Repository: https://github.com/rrwick/Bandage.git
 
