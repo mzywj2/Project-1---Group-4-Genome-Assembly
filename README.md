@@ -29,8 +29,12 @@ Example name: *FAQ09231_pass_barcode04_a6a5014a_0.fastq.gz* and fail one
 * 0 is the
 
 
+## Figures
+NanoPlot figure:
 
 
+
+The example plot above shows a plot comparing...
 
 
 ## Installation
