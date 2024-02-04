@@ -68,7 +68,9 @@ For further detail about Minimap2, refer to the Minimap2 GitHub Repository: http
 The most up to date version of Unicycler can be installed by:
 
 `git clone https://github.com/rrwick/Unicycler.git
+
 cd Unicycler
+
 python3 setup.py install`
 
 ### Bandage
