@@ -77,9 +77,9 @@ For further detail about Bandage, refer to the Bandage GitHub Repository: https:
 ## Additional Resources
 For more detailed explanations about each step of the process, refer to the following YouTube videos :
 
-- [NanoPlot Tutorial] (): This video
-- [Minimap2 Tutorial] (): This video
-- [Bandage Tutorial]  (): This video
+- [NanoPlot Tutorial] (https://www.youtube.com/watch?v=AeJj7_MMBTo): This video demonstrates how to use NanoPlot for quality control
+- [Minimap2 Tutorial] (https://www.youtube.com/watch?v=f4sT5pEHoxU): This video explains the use of Minimap2 for mapping and Miniasm for genome assembly
+- [Bandage Tutorial]  (https://www.youtube.com/watch?v=avorVt8PxiY): This video shows how to install Bandage for Linux and usage for genome assembly visualisation 
 
 
 ## Contributions
