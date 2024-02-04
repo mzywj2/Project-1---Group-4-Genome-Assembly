@@ -67,11 +67,13 @@ For further detail about Minimap2, refer to the Minimap2 GitHub Repository: http
 ### Unicycler
 The most up to date version of Unicycler can be installed by:
 
-`git clone https://github.com/rrwick/Unicycler.git
+`git clone https://github.com/rrwick/Unicycler.git`
 
-cd Unicycler
+`cd Unicycler`
 
-python3 setup.py install`
+`python3 setup.py install`
+
+For further detail about Unicycler, refer to the Uncycler GitHub Repository: https://github.com/rrwick/Unicycler.git
 
 ### Bandage
 Bandage can be installed using HomeBrew for OS or by downloading the binaries for other platforms, which can be found from the Bandage website (https://rrwick.github.io/Bandage/) or the Bandage GitHub Release Page (https://github.com/rrwick/Bandage/releases/). 
@@ -88,6 +90,7 @@ For more detailed explanations about each step of the process, refer to the foll
 
 - [NanoPlot Tutorial] (https://www.youtube.com/watch?v=AeJj7_MMBTo): This video demonstrates how to use NanoPlot for quality control
 - [Minimap2 Tutorial] (https://www.youtube.com/watch?v=f4sT5pEHoxU): This video explains the use of Minimap2 for mapping and Miniasm for genome assembly
+- [Unicycler Tutorial] (https://www.youtube.com/watch?v=oTCLahU31Lg): This video demostrates the use of Unicycler for hybrid genome assembly
 - [Bandage Tutorial]  (https://www.youtube.com/watch?v=avorVt8PxiY): This video shows how to install Bandage for Linux and usage for genome assembly visualisation 
 
 
@@ -98,4 +101,5 @@ If you found an issue or would like to submit an improvement to this project, pl
 ## Acknowledgments
 - Nanoplot: NanoPlot GitHub Repository: https://github.com/wdecoster/NanoPlot.git
 - Minimap2: Minimap2 GitHub Repository: https://github.com/lh3/minimap2.git
+- Unicycler: Unicycler GitHub Repository: https://github.com/rrwick/Unicycler.git
 - Bandage : Bandage GitHub Repository: https://github.com/rrwick/Bandage.git and Bandage Website: https://rrwick.github.io/Bandage/
