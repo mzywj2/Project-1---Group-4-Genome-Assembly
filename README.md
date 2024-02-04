@@ -64,6 +64,13 @@ Minimap can be installed using conda:
 
 For further detail about Minimap2, refer to the Minimap2 GitHub Repository: https://github.com/lh3/minimap2.git
 
+### Unicycler
+The most up to date version of Unicycler can be installed by:
+
+`git clone https://github.com/rrwick/Unicycler.git
+cd Unicycler
+python3 setup.py install`
+
 ### Bandage
 Bandage can be installed using HomeBrew for OS or by downloading the binaries for other platforms, which can be found from the Bandage website (https://rrwick.github.io/Bandage/) or the Bandage GitHub Release Page (https://github.com/rrwick/Bandage/releases/). 
 
