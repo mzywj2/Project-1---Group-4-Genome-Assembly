@@ -32,7 +32,7 @@ Example name: *FAQ09231_pass_barcode04_a6a5014a_0.fastq.gz* and fail one
 ## Figures
 NanoPlot figure:
 
-
+![Alt Text] ()
 
 
 The example plot above shows a plot comparing...
