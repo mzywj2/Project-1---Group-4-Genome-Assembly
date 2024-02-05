@@ -53,8 +53,8 @@ The following example image illustrates a GFA file produced by Miniasm (visualis
 
 
 
-### Unicycler Figure
-The example image below illustrates a GFA file produced by Unicycler which has been visualised using Bandage. Unicycler is specifically designed for the assembly of bacterial genomes. Both short and long reads as well as combined (hybrid) reads can be emplyed by Unicycler
+### Unicycler Figure:
+The example image below illustrates a GFA file produced by Unicycler which has been visualised using Bandage. Unicycler is specifically designed for the assembly of bacterial genomes. Both short and long reads as well as combined (hybrid) reads can be employed by Unicycler
 
 
 ![Unicycler Image for a Short Read](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/SR%20Unicycler.png)
