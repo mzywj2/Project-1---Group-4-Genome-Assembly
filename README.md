@@ -30,7 +30,7 @@ Example name: *FAQ09231_pass_barcode04_a6a5014a_0.fastq.gz* and fail one
 
 
 ## Figures
-NanoPlot figure:
+### NanoPlot Figure:
 
 ![NanoPlot KDE plot Example Image](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/newplot.png) 
 
@@ -44,6 +44,12 @@ In addition to various plots, NanoPlot also creates a NanoPlot report which can 
 To view the report go to your web browser and type:
 
 http://10.102.161.12:34567  - which is the ip and the hpc extension
+
+### Miniasm Figure:
+
+![Miniasm Image for a Short Read](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/SR%20Miniasm.png)
+
+### Unicycler Figure
 
 ## Installation
 
