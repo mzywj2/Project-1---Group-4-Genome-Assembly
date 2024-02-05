@@ -35,7 +35,7 @@ Example name: *FAQ09231_pass_barcode04_a6a5014a_0.fastq.gz* and fail one
 ![NanoPlot KDE plot Example Image](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/newplot.png) 
 
 
-The example plot above shows a plot comparing...
+The example plot above shows a KDE plot (Kernel Density Estimation) for Nanopore long read data.
 
 In addition to various plots, NanoPlot also creates a NanoPlot report which can be viewed by creating a web browser:
 
@@ -45,11 +45,17 @@ To view the report go to your web browser and type:
 
 http://10.102.161.12:34567  - which is the ip and the hpc extension
 
+
 ### Miniasm Figure:
+The following example image illustrates a GFA file produced by Miniasm (visualised using Bandage) following Minimap2 assembly of short read data.
 
 ![Miniasm Image for a Short Read](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/SR%20Miniasm.png)
 
+
+
 ### Unicycler Figure
+The example image below illustrates a GFA file produced by Unicycler which has been visualised using Bandage. Unicycler is specifically designed for the assembly of bacterial genomes. Both short and long reads as well as combined (hybrid) reads can be emplyed by Unicycler
+
 
 ![Unicycler Image for a Short Read](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/SR%20Unicycler.png)
 
