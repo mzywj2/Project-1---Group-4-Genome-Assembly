@@ -35,7 +35,7 @@ Example name: *FAQ09231_pass_barcode04_a6a5014a_0.fastq.gz* and fail one
 ![NanoPlot KDE plot Example Image](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/newplot.png) 
 
 
-The example plot above shows a KDE plot (Kernel Density Estimation) for Nanopore long read data.
+The example plot above shows a KDE plot (Kernel Density Estimation) for Nanopore long read data, comparing read length with average read density.
 
 In addition to various plots, NanoPlot also creates a NanoPlot report which can be viewed by creating a web browser:
 
