@@ -51,6 +51,10 @@ http://10.102.161.12:34567  - which is the ip and the hpc extension
 
 ### Unicycler Figure
 
+![Unicycler Image for a Short Read](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/SR%20Unicycler.png)
+
+
+
 ## Installation
 
 ### Nanoplot
