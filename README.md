@@ -32,6 +32,7 @@ Example name: *FAQ09231_pass_barcode04_a6a5014a_0.fastq.gz* and fail one
 ## Figures
 NanoPlot figure:
 
+<img width="389" alt="Screenshot 2024-02-05 101516" src="https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/assets/151543153/01c30c2b-c021-462e-98ac-7b6eb477b705">
 
 
 The example plot above shows a plot comparing...
