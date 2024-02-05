@@ -32,7 +32,7 @@ Example name: *FAQ09231_pass_barcode04_a6a5014a_0.fastq.gz* and fail one
 ## Figures
 NanoPlot figure:
 
-![NanoPlot KDE plot Example Image](README.md/Screenshot 2024-02-05 101516.png) 
+![NanoPlot KDE plot Example Image](C:\Users\kavit\OneDrive\Pictures\Screenshots\Screenshot 2024-02-05 101516.png) 
 
 
 The example plot above shows a plot comparing...
