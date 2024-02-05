@@ -32,7 +32,7 @@ Example name: *FAQ09231_pass_barcode04_a6a5014a_0.fastq.gz* and fail one
 ## Figures
 NanoPlot figure:
 
-![NanoPlot KDE plot Example Image]([mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/newplot.png) 
+![NanoPlot KDE plot Example Image]([/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/newplot.png) 
 
 
 The example plot above shows a plot comparing...
