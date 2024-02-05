@@ -19,4 +19,4 @@ pip install nanoplot
 # To check if NanoPlot has been installed:
 pip list
 
-
+# Then merge
