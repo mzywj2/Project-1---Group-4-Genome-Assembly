@@ -20,8 +20,10 @@ source $HOME/.bash_profile
 
 # activate shared conda environment
 conda activate /shared/conda/shared
+
 cd /workhere/students_2023/group4/lr_pass/nanoplot_report
-# test flye
+
+# run the NanoPlot command
 NanoPlot \
 --threads 8 \
 --fastq /workhere/students_2023/group4/pass_longreads/*
