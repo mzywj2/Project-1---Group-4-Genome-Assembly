@@ -11,14 +11,15 @@
 #SBATCH --time=01:00:00
 #SBATCH --output=/shared/home/mbyca6/slurm-%x-%j.out
 
-#load your bash profile
+# load your bash profile
 source $HOME/.bash_profile
 
-#activate shared conda environment:
+# activate shared conda environment:
 conda activate /shared/conda/busco
 
+# run the busco command
 busco -i /workhere/students_2023/group4/all_longreads/all_unicycler_output/lr_uc_assembly.fasta -l /shared/conda/busco_downloads/lineages/archaea_odb10 -o /longreads -m genome
 
-#deactivate conda environment:
+# deactivate conda environment:
 conda deactivate
 
