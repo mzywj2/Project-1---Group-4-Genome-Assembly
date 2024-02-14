@@ -1,4 +1,4 @@
-# To
+# To run Prokka for genome annotation on the Barcode 04 data, the bash script is titled kj_prokka.sh
 
 #!/bin/bash
 #SBATCH --job-name=prokka_barcode04
