@@ -1,1 +1,24 @@
+# To assess the genome assembly and the annotation completeness using busco for all the long read data, the bash script is titled lr_uc_busco.sh
+
+#!/bin/bash
+
+#SBATCH --job-name=busco
+#SBATCH --partition=hpc
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=20g
+#SBATCH --time=01:00:00
+#SBATCH --output=/shared/home/mbyca6/slurm-%x-%j.out
+
+#load your bash profile
+source $HOME/.bash_profile
+
+#activate shared conda environment:
+conda activate /shared/conda/busco
+
+busco -i /workhere/students_2023/group4/all_longreads/all_unicycler_output/lr_uc_assembly.fasta -l /shared/conda/busco_downloads/lineages/archaea_odb10 -o /longreads -m genome
+
+#deactivate conda environment:
+conda deactivate
 
