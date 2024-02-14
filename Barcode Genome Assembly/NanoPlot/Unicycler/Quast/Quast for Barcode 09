@@ -1,4 +1,4 @@
-# To conduct quast on barcode 04 data against its reference, the bash script is titled qst_9.sh
+# To conduct quast on barcode 09 data against its reference, the bash script is titled qst_9.sh
 
 #!/bin/bash
 #SBATCH --job-name=b9_quast
