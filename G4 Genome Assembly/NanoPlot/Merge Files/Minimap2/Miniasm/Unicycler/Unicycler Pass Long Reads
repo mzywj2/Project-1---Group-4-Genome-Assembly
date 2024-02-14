@@ -23,7 +23,8 @@ conda activate /shared/conda/shared
 
 cd ~
 cd /workhere/students_2023/group4/all_longreads
-# test flye
+
+# run the unicycler command
 unicycler -t 8 -l longreads_pass_allfiles.fastq.gz -o lr_pass_output2
 
 # deactivate conda environment
