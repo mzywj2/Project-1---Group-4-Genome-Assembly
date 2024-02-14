@@ -20,10 +20,11 @@ source $HOME/.bash_profile
 
 # activate shared conda environment
 conda activate /shared/conda/shared
+
 cd ~
 cd /workhere/students_2023/group4/all_longreads
-# test flye
 
+# run the minimap2 command
 minimap2 -t 8 -x ava-ont longreads_pass_allfiles.fastq.gz longreads_pass_allfiles.fastq.gz | gzip -1 > minimap_longreads_pass_allfiles.paf.gz
 
 # deactivate conda environment
