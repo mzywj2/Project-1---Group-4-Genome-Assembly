@@ -17,6 +17,7 @@ source $HOME/.bash_profile
 #activate shared conda environment:
 conda activate /shared/conda/busco
 
+# run the busco command
 busco -i /workhere/students_2023/group4/hybrid_uc_out/read_alignment/h_uc_assembly.fasta -l /shared/conda/busco_downloads/lineages/archaea_odb10 -o /workhere/students_2023/group4/busco -m genome
 
 #deactivate conda environment:
