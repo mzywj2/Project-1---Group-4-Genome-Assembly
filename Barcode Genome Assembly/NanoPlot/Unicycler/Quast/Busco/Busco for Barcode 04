@@ -1,1 +1,25 @@
+# To conduct a busco genome assembly and annotation completeness on the barcode 04 data, the bash script is titled b04_busco.sh
+
+#!/bin/bash
+
+#SBATCH --job-name=busco
+#SBATCH --partition=hpc
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=20g
+#SBATCH --time=01:00:00
+#SBATCH --output=/shared/home/mbyca6/slurm-%x-%j.out
+
+# load your bash profile
+source $HOME/.bash_profile
+
+# activate shared conda environment:
+conda activate /shared/conda/busco
+
+# run the busco command 
+busco -i /workhere/students_2023/group4/matt_data/barcode04/uc_4_out/assembly.fasta -l /shared/conda/busco_downloads/lineages/archaea_odb10 -o /busco/ -m genome
+
+# deactivate conda environment:
+conda deactivate
 
