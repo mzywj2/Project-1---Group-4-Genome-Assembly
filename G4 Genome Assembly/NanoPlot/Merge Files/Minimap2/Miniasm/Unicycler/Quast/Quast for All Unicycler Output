@@ -1,1 +1,37 @@
+# To carry out a quality assessment on all the unicycler outputs using quast, the bash script is titled qst_all_og.sh
+
+#!/bin/bash
+#SBATCH --job-name=qst_all
+#SBATCH --partition=hpc
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=30g
+#SBATCH --time=24:00:00
+#SBATCH --output=/shared/home/mbxfb3/slurm-%x-%j.out
+#SBATCH --error=/shared/home/mbxfb3/slurm-%x-%j.err
+
+#######################
+# PREPARE ENVIRONMENT #
+#######################
+
+# load your bash profile (so you can use your conda install)
+source $HOME/.bash_profile
+
+# activate shared conda environment
+conda activate /shared/conda/shared
+
+cd ~
+cd /workhere/students_2023/group4
+
+# quast command
+python /shared/conda/shared/bin/quast all_longreads/lr_pass_output2/lr_pass.fasta \
+shortreads/unicycler_sr_out/sr_uc_assembly.fasta \
+all_longreads/all_unicycler_output/lr_uc_assembly.fasta \
+hybrid_uc_out/h_uc_assembly.fasta \
+-r matt_data/barcode09/uc_b9_out/hv/hv_fullwplas.fasta \
+-g matt_data/barcode09/uc_b9_out/hv/hv_fullwplas.gff3 -o qst_all_og_out
+
+# deactivate conda environment
+conda deactivate
 
