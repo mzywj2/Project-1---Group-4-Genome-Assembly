@@ -1,4 +1,4 @@
-# To merge the R1 short reads data, the bash script is titled merge_shortreads.sh
+# To merge the R2 short reads data, the bash script is titled merge_shortreads.sh
 
 #!/bin/bash
 
@@ -13,5 +13,7 @@
 
 # merge:
 cd /workhere/students_2023/group4/shortreads/
-cat *R1*.gz > R2_short_reads_allfiles.fastq.gz
+cat *R2*.gz > R2_short_reads_allfiles.fastq.gz
+
+
 
