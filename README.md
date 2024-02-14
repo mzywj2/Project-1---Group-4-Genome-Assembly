@@ -1,6 +1,6 @@
 # Genome Assembly using Illumina and Nanopore data
 
-This project utilises both long-read (nanopore) data and short-read (illumina) data to conduct genome assembly. The pipeline conists of the quality control tool NanoPlot to assess the Nanopore reads. Also, the use of Minimap2 and Miniasm to align and assemble the reads, as well as the use of Bandage to visualise the assembled genome.
+This project utilises both long-read (nanopore) data and short-read (illumina) data to conduct genome assembly. The pipeline conists of the quality control tool NanoPlot to assess the Nanopore reads. Also, the use of Minimap2 and Miniasm to align and assemble the reads, as well as the use of Bandage to visualise the assembled genome. Furthermore, the genome assembly tool Unicycler is utilised alongside Quast which is a quality assessment tool for genome assemblies and Busco which assesses genome assembly and annotation completeness. Finally, the gene annotation tool Prokka and the genome visualiser software GenoVi are used.
 
 ## Our Data
 ### The Short-Read Data:
@@ -59,6 +59,10 @@ The example image below illustrates a GFA file produced by Unicycler which has b
 
 ![Unicycler Image for a Short Read](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/SR%20Unicycler.png)
 
+### Quast Figure:
+
+### GenoVi Figure:
+
 
 
 ## Installation
@@ -100,6 +104,24 @@ For installation on OS using HomeBrew:
 `brew install bandage`
 
 For further detail about Bandage, refer to the Bandage GitHub Repository: https://github.com/rrwick/Bandage.git
+
+### Quast
+
+
+
+
+### Busco
+
+
+
+
+### Prokka
+Version prokka 1.14.6
+
+
+### GenoVi
+
+
 
 
 ## Additional Resources
