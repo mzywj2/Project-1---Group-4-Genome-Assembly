@@ -1,1 +1,7 @@
+# In order to conduct BLAST on the miniasm/minimap2 outputs, the miniasm gfa must be converted to a miniasm fasta file 
 
+# For all long reads
+awk '/^S/{print “>”$2”\n”$3}' miniasm_all_lr.gfa > ma_all_lr.fasta
+
+# For pass long reads
+awk '/^S/{print “>”$2”\n”$3}' miniasm_pass_lr.gfa > ma_pass_lr.fasta
