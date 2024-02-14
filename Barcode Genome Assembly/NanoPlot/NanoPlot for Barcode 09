@@ -1,1 +1,35 @@
+# To conduct a NanoPlot for the barcode 09 data, the bash script is titled nanoplot_b09.sh
+
+#!/bin/bash
+
+#SBATCH --job-name=nanoplot_b09
+#SBATCH --partition=hpc
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=20g
+#SBATCH --time=01:00:00
+#SBATCH --output=/shared/home/mbyca6/slurm-%x-%j.out
+
+#######################
+# PREPARE ENVIRONMENT #
+#######################
+
+# load your bash profile (so you can use your conda install)
+source $HOME/.bash_profile
+
+# activate shared conda environment
+conda activate /shared/conda/shared
+
+cd /workhere/students_2023/group4/matt_data/barcode09/uc_b9_out/nanoplot_report
+
+# run the NanoPlot command
+NanoPlot \
+--threads 8 \
+--fastq /workhere/students_2023/group4/matt_data/barcode09/b9.fastq.gz \
+--plots kde dot \
+-o /workhere/students_2023/group4/matt_data/barcode09/uc_b9_out/nanoplot_report
+
+# deactivate conda environment
+conda deactivate
 
