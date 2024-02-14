@@ -1,4 +1,4 @@
-# To conduct a busco genome assembly and annotation completeness on the barcode 04 data, the bash script is titled b09_busco.sh
+# To conduct a busco genome assembly and annotation completeness on the barcode 09 data, the bash script is titled b09_busco.sh
 
 #!/bin/bash
 
