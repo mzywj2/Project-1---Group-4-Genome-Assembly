@@ -39,11 +39,11 @@ The example plot above shows a KDE plot (Kernel Density Estimation) for Nanopore
 
 In addition to various plots, NanoPlot also creates a NanoPlot report which can be viewed by creating a web browser:
 
-`python3 -m http.server 34567` - 34567 can be changed to your personalised 5 digit extension 
+`python3 -m http.server 34567` - 34567 is an example of the personalised 5 digit extension that is required 
 
 To view the report go to your web browser and type:
 
-http://10.102.161.12:34567  - which is the ip and the hpc extension
+http://<ip address>:34567  - which is the ip and your personalised the hpc extension
 
 
 ### Miniasm Figure:
@@ -60,6 +60,13 @@ The example image below illustrates a GFA file produced by Unicycler which has b
 ![Unicycler Image for a Short Read](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/SR%20Unicycler.png)
 
 ### Quast Figure:
+The example image below is an output file produced via QUAST analysis comparing all long read, pass only long read, short read, and hybrid unicycler output.
+
+
+![QUAST Image comparing all long read, pass long read, short read and hybrid unicycler output](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/QUAST.png)
+
+
+
 
 ### GenoVi Figure:
 
