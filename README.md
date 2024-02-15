@@ -295,7 +295,7 @@ For further detail regarding GenoVi, refer to the GenoVi GitHub Repository: http
 ## Pipeline for Group 4 data genome assembly:
 
 ```mermaid
-graph TD;
+graph LR;
 A(Group 4 Data)-->B(Merge Files);
     B-->C(Minimap2 & Miniasm);
     C-->D(Bandage);
