@@ -106,9 +106,34 @@ For installation on OS using HomeBrew:
 For further detail about Bandage, refer to the Bandage GitHub Repository: https://github.com/rrwick/Bandage.git
 
 ### Quast
+QUAST can be installed using Python with a basic installation as well as a full installation:
 
+Basic installation:
 
+`./setup.py install`
 
+Full installation:
+
+`./setup.py install_full`
+
+For further detail about QUAST, refer to the QUAST GitHub Repository: https://github.com/ablab/quast.git
+
+For this project, QUAST was installed using a virtual environment on Python:
+
+```
+# Create virtual environment:
+python3 -m venv myenv (only need to create once)
+
+# Activate:
+source myenv/bin/activate
+
+# Install quast:
+pip3 install quast
+
+# If an update is required:
+pip3 install --upgrade quast
+
+```
 
 ### Busco
 
