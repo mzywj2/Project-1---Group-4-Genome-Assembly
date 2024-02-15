@@ -296,14 +296,14 @@ For further detail regarding GenoVi, refer to the GenoVi GitHub Repository: http
 
 ```mermaid
 graph TD;
-A(Group_4_Data)-->|Merge_Files|B(Minimap2 & Miniasm);
-    B-->C(Bandage);
-    C-->D(Unicycler);
-    D-->E(BLAST);
-    E-->F(QUAST);
-    F-->G(Busco);
-    A-->H(Nanoplot);
-    B-->I(Merge_Files);
+A(Group 4 Data)-->|Merge Files|B(Merge Files);
+    B-->C(Minimap2 & Miniasm);
+    C-->D(Bandage);
+    D-->E(Unicycler);
+    E-->F(BLAST);
+    F-->G(QUAST);
+    G-->H(Busco);
+    A-->I(Nanoplot);
 
 ```
 
