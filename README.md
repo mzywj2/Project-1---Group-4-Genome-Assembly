@@ -156,6 +156,20 @@ For installation on OS using HomeBrew:
 
 For further detail about Bandage, refer to the Bandage GitHub Repository: https://github.com/rrwick/Bandage.git
 
+Also, to install brew on Mac:
+
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" `
+
+Then in order to allow Bandage to see the BLAST install on M1 Mac, a symbolic link must be creatde to your BLAST install:
+
+```
+sudo ln -s /opt/homebrew/bin/makeblastdb /usr/local/bin/makeblastdb
+sudo ln -s /opt/homebrew/bin/blastn /usr/local/bin/blastn
+sudo ln -s /opt/homebrew/bin/tblastn /usr/local/bin/tblastn
+
+```
+
+
 ### Quast
 QUAST can be installed using Python with a basic installation as well as a full installation:
 
@@ -230,10 +244,45 @@ busco \
 ### Prokka
 Version prokka 1.14.6
 
+Prokka can be installed using Bioconda:
+
+`conda install -c conda-forge -c bioconda -c defaults prokka`
+
+For further details about Prokka, refer to the Prokka GitHub Repository: https://github.com/tseemann/prokka.git
+
+#### Example Usage:
+
+```
+prokka \
+--outdir /workhere/students_2023/group4/matt_data/barcode04/uc_4_out/prokka_4_out \
+--prefix barcode04 \
+--kingdom Archaea \
+--gcode 1 \
+--cpus 8 \
+./barcode04/uc_4_out/barcode04.fasta
+
+```
 
 ### GenoVi
 
+The GenoVi dependencies can be installed using bioconda:
 
+`conda create -n genovi python=3.7 circos`
+
+The next step is to activate the environment:
+
+`conda activate genovi`
+
+Then install GenoVi using pip:
+
+`pip install genovi`
+
+For further detail regarding GenoVi, refer to the GenoVi GitHub Repository: https://github.com/robotoD/GenoVi.git
+
+#### Example Usage:
+
+```
+```
 
 
 ## Additional Resources
