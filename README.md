@@ -307,6 +307,22 @@ A(Group 4 Data)-->B(Merge Files);
 
 ```
 
+
+## Pipeline for Barcode 04, 09 and 10 data genome assembly:
+
+```mermaid
+graph LR;
+A(Group 4 Data)-->B(NanoPlot);
+    B-->C(Unicycler);
+    C-->D(Bandage);
+    D-->E(BLAST);
+    E-->F(QUAST);
+    F-->G(Busco);
+    G-->H(Prokka);
+    H-->I(GenoVi);
+
+```
+
 ## Additional Resources
 For more detailed explanations about each step of the process, refer to the following YouTube videos :
 
