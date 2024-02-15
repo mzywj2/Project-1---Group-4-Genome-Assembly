@@ -78,12 +78,25 @@ You may need to upgrade the pip version:
 
 For further detail about NanoPlot, refer to the NanoPlot GitHub Repository: https://github.com/wdecoster/NanoPlot.git
 
+#### Example Usage:
+```
+NanoPlot -t 8 --fastq FAQ09231_pass_barcode04_a6a5014a_0.fastq.gz --plots kde
+
+```
+
 ### Minimap2
 Minimap can be installed using conda:
 
 `conda install bioconda::minimap2`
 
 For further detail about Minimap2, refer to the Minimap2 GitHub Repository: https://github.com/lh3/minimap2.git
+
+#### Example Usage:
+
+```
+minimap2 -t 8 -x ava-ont all_lr.fastq.gz all_lr.fastq.gz | gzip -1 > minimap_all_lr.paf.gz
+
+```
 
 ### Unicycler
 The most up to date version of Unicycler can be installed by:
@@ -95,6 +108,44 @@ The most up to date version of Unicycler can be installed by:
 `python3 setup.py install`
 
 For further detail about Unicycler, refer to the Uncycler GitHub Repository: https://github.com/rrwick/Unicycler.git
+
+#### Example Usage:
+
+Long Read Assembly:
+
+```
+unicycler \
+-t 8 \
+-l longreads_pass_allfiles.fastq.gz \
+-o lr_pass_output2
+
+```
+
+Short Read Assembly:
+
+```
+unicycler \
+--kmers 25,55,71 \
+-t 8 \
+-1 R1_short_reads_allfiles.fastq.gz \
+-2 R2_short_reads_allfiles.fastq.gz \
+-o unicycler_sr_out
+
+```
+
+Hybrid Assembly:
+
+```
+unicycler \
+--kmers 25,55,71 \
+-t 8 \
+-l all_longreads/longreads_pass_allfiles.fastq.gz \
+-1 shortreads/R1_short_reads_allfiles.fastq.gz \
+-2 shortreads/R2_short_reads_allfiles.fastq.gz \
+-o hybrid_uc_out4
+
+```
+
 
 ### Bandage
 Bandage can be installed using HomeBrew for OS or by downloading the binaries for other platforms, which can be found from the Bandage website (https://rrwick.github.io/Bandage/) or the Bandage GitHub Release Page (https://github.com/rrwick/Bandage/releases/). 
@@ -135,9 +186,45 @@ pip3 install --upgrade quast
 
 ```
 
+#### Example Usage:
+
+```
+python /shared/conda/shared/bin/quast all_longreads/lr_pass_output2/lr_pass.fasta \
+shortreads/unicycler_sr_out/sr_uc_assembly.fasta \
+all_longreads/all_unicycler_output/lr_uc_assembly.fasta \
+hybrid_uc_out/h_uc_assembly.fasta \
+-r matt_data/barcode09/uc_b9_out/hv/hv_fullwplas.fasta \
+-g matt_data/barcode09/uc_b9_out/hv/hv_fullwplas.gff3 \
+-o qst_all_og_out
+
+```
+
+
 ### Busco
 
+For this project, Busco was installed via the conda environment:
 
+`/shared/conda/busco`
+
+The lineage dataset is accessed via:
+
+`/shared/conda/busco_downloads/lineages/archaea_odb10` 
+
+Specifying the archaea_odb10 with the -l flag `-l archaea_odb10`
+
+For further detail about Busco, refer to the Busco GitHub Repository: https://github.com/WenchaoLin/BUSCO-Mod.git
+
+
+#### Example Usage:
+
+```
+busco \
+-i /workhere/students_2023/group4/shortreads/unicycler_sr_out/sr_uc_assembly.fasta \
+-l /shared/conda/busco_downloads/lineages/archaea_odb10 \
+-o /workhere/students_2023/group4/busco \
+-m genome 
+
+```
 
 
 ### Prokka
@@ -167,3 +254,7 @@ If you found an issue or would like to submit an improvement to this project, pl
 - Minimap2: Minimap2 GitHub Repository: https://github.com/lh3/minimap2.git
 - Unicycler: Unicycler GitHub Repository: https://github.com/rrwick/Unicycler.git
 - Bandage : Bandage GitHub Repository: https://github.com/rrwick/Bandage.git and Bandage Website: https://rrwick.github.io/Bandage/
+- QUAST: QUAST GitHub Repository: https://github.com/ablab/quast.git
+- Busco: Busco GutHub Repository: https://github.com/WenchaoLin/BUSCO-Mod.git
+- Prokka: Prokka GitHub Repository: https://github.com/tseemann/prokka.git
+- GenoVi: GenoVi GitHub Repository: https://github.com/robotoD/GenoVi.git
