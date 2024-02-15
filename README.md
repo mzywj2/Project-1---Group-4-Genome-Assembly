@@ -292,6 +292,18 @@ For further detail regarding GenoVi, refer to the GenoVi GitHub Repository: http
 ```
 
 
+## Pipeline for Group 4 data genome assembly:
+
+```mermaid
+graph TD;
+A(Group_4_Data)-->|Nanoplot|B(Merge_Files);
+    B-->|Minimap2 & Miniasm|C(Bandage);
+    C-->|Unicycler|D(BLAST);
+    D-->|Genome & Reference Genome|E(QUAST);
+    E-->F(Busco);
+
+```
+
 ## Additional Resources
 For more detailed explanations about each step of the process, refer to the following YouTube videos :
 
