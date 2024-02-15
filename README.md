@@ -296,7 +296,7 @@ For further detail regarding GenoVi, refer to the GenoVi GitHub Repository: http
 
 ```mermaid
 graph TD;
-A(Group 4 Data)-->|Merge Files|B(Merge Files);
+A(Group 4 Data)-->B(Merge Files);
     B-->C(Minimap2 & Miniasm);
     C-->D(Bandage);
     D-->E(Unicycler);
