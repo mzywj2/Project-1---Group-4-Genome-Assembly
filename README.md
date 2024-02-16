@@ -22,11 +22,10 @@ Example name: *H3932_S4_L001_R1_001_fastqc.zip* and *H3932_S4_L001_R2_001_fastq.
 Example name: *FAQ09231_pass_barcode04_a6a5014a_0.fastq.gz* and fail one
 
 * FAQ09231 = Sample name
-* Pass = 
-* Fail =
-* Barcode is the
-* a6a5014a is the
-* 0 is the
+* Pass = Reads that are above and therefore have passed a sequencing quality threshold
+* Fail = Reads that are below and therefore have failed a sequencing quality threshold
+* Barcode is an identifiable factor allocated to each dataset
+
 
 
 ## Figures
@@ -69,7 +68,10 @@ The example image below is an output file produced via QUAST analysis comparing 
 
 
 ### GenoVi Figure:
+The following example image illustrates an archaeal circular genome representation built via GenoVi.
 
+
+![GenoVi Image of an Archaeal Circular Genome Representation](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/genovi_04.png)
 
 
 ## Installation
