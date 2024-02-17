@@ -26,7 +26,7 @@ cd /workhere/students2023/group4/
 #matt_data/genovi_test-temp/contig_1-matt_data/
 #matt_data/genovi_test/matt_data/
 
-#
+# run the genovi command
 genovi -i barcode10.gbk -o genovi_10 -s complete -bc white -cs ocean -te --size
 
 #-i, genBank input file path.
