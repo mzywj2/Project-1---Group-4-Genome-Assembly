@@ -21,10 +21,12 @@ source $HOME/.bash_profile
 conda activate /shared/conda/shared
 
 cd /workhere/students_2023/group4/all_longreads
-# test flye
-miniasm -f \
+# run the miniasm command
+miniasm \
+-f \
 longreads_pass_allfiles.fastq.gz \
-minimap_longreads_pass_allfiles.paf.gz > miniasm_pass_lr.gfa
+minimap_longreads_pass_allfiles.paf.gz \
+> miniasm_pass_lr.gfa
 
 # deactivate conda environment
 conda deactivate
