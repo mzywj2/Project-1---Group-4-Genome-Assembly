@@ -25,7 +25,12 @@ cd ~
 cd /workhere/students_2023/group4/matt_data/barcode09/uc_b9_out
 
 # quast command
-python /shared/conda/shared/bin/quast assembly.fasta -r hv/hv_fullwplas.fasta -g hv/hv_fullwplas.gff3 -o b9_quast_out
+python \
+/shared/conda/shared/bin/quast \
+assembly.fasta \
+-r hv/hv_fullwplas.fasta \
+-g hv/hv_fullwplas.gff3 \
+-o b9_quast_out
 
 # deactivate conda environment
 conda deactivate
