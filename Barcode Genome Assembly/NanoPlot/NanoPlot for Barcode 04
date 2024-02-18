@@ -25,10 +25,10 @@ cd /workhere/students_2023/group4/matt_data/barcode04/uc_4_out/nanoplot_report
 
 # run NanoPlot command
 NanoPlot \
---threads 8 \
---fastq /workhere/students_2023/group4/matt_data/barcode04/b4.fastq.gz \
---plots kde dot \
--o /workhere/students_2023/group4/matt_data/barcode04/uc_4_out/nanoplot_report
+--threads 8 \                                                                   # Specify the number of CPU cores that NanoPlot is allowed to use 
+--fastq /workhere/students_2023/group4/matt_data/barcode04/b4.fastq.gz \        # Input file path
+--plots kde dot \                                                               # The type of plot that NanoPlot should generate: this option is Kernel Density Estimation and dot plot
+-o /workhere/students_2023/group4/matt_data/barcode04/uc_4_out/nanoplot_report  # The path to the output directory
 
 # deactivate conda environment
 conda deactivate
