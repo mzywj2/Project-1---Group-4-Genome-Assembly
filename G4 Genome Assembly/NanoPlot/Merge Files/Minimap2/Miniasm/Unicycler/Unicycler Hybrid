@@ -25,7 +25,13 @@ cd ~
 cd /workhere/students_2023/group4
 
 # run the unicycler command
-unicycler --kmers 25,55,71 -t 8 -l all_longreads/longreads_pass_allfiles.fastq.gz -1 shortreads/R1_short_reads_allfiles.fastq.gz -2 shortreads/R2_short_reads_allfiles.fastq.gz -o hybrid_uc_out4
+unicycler \
+--kmers 25,55,71 \                                        # Specifies the k-mer sizes to be used in the assembly process 
+-t 8 \                                                    # Number of CPUs to be used in the process 
+-l all_longreads/longreads_pass_allfiles.fastq.gz \       # Input long read file
+-1 shortreads/R1_short_reads_allfiles.fastq.gz \          # Input file containing first mate pairs of short reads
+-2 shortreads/R2_short_reads_allfiles.fastq.gz \          # Input file containing second mate pairs of short reads
+-o hybrid_uc_out4                                         # Output directory
 
 # deactivate conda environment
 conda deactivate
