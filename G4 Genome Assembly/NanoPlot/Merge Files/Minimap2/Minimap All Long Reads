@@ -25,7 +25,13 @@ cd ~
 cd /workhere/students_2023/group4/all_longreads
 
 # run the minimap2 command
-minimap2 -t 8 -x ava-ont all_lr.fastq.gz all_lr.fastq.gz | gzip -1 > minimap_all_lr.paf.gz
+minimap2 \
+-t 8 \                      # The number of CPU cores to be used during the alignment
+-x ava-ont \                # The preset for minimap, ava-ont is for Oxford Nanopore
+all_lr.fastq.gz \           # The input fastq file, it is given twice to indicate that minimap should align the reads to themselves
+all_lr.fastq.gz \
+| gzip -1 \                 # Pipes the minimap2 output to a gzip with compression level 1 
+> minimap_all_lr.paf.gz     # Redirects the compressed to the file name given
 
 # deactivate conda environment
 conda deactivate
