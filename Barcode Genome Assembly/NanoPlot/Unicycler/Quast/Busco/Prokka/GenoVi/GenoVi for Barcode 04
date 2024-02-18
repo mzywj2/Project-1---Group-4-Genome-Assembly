@@ -18,13 +18,13 @@ conda create -n genovi -c bioconda python=3.7 circos
 conda activate genovi
 
 #install package (only need to do once)
-#pip3 install genovi
+pip3 install genovi
 
 cd /workhere/students2023/group4/
 
 #create output directorys:
-#matt_data/genovi_test-temp/contig_1-matt_data/
-#matt_data/genovi_test/matt_data/
+matt_data/genovi_test-temp/contig_1-matt_data/
+matt_data/genovi_test/matt_data/
 
 # run the genovi command
 genovi \
