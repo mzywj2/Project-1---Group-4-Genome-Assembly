@@ -27,13 +27,15 @@ cd /workhere/students2023/group4/
 #matt_data/genovi_test/matt_data/
 
 # run the genovi command
-genovi -i barcode10.gbk -o genovi_10 -s complete -bc white -cs ocean -te --size
+genovi \
+-i barcode10.gbk \
+-o genovi_10 \
+-s complete \
+-bc white \
+-cs ocean \
+-te \
+--size
 
-#-i, genBank input file path.
-#-o, output file name. Default: genovi.
-#-cs, colour scheme: strong, autumn, dawn, blossom, paradise, neutral, blue, purple, soil, grayscale, velvet, pastel, ocean, wood, beach, desert, ice, island, forest, toxic, fire, spring.
-#-s, --status. “complete” or “draft”. Complete genomes are drawn as separate circles for each contig/replicon.
-#--size, displays the genome size of each independent circular representation.
 
 #exit virtual environment:
 deactivate
