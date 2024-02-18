@@ -26,14 +26,14 @@ cd /workhere/students_2023/group4/matt_data
 
 
 # run prokka command
-prokka --outdir /workhere/students_2023/group4/matt_data/barcode04/uc_4_out/prokka_4_out \
---prefix barcode04 \
---kingdom Archaea \
---gcode 1 \
---cpus 8 \
-./barcode04/uc_4_out/barcode04.fasta
+prokka --outdir /workhere/students_2023/group4/matt_data/barcode04/uc_4_out/prokka_4_out \  # Output directory
+--prefix barcode04 \                                                                        # Prefix for output file that is generated 
+--kingdom Archaea \                                                                         # Kingdom of the organism being annotated
+--gcode 1 \                                                                                 # Genetic code for annotation, this script uses gcode 1 which is the standard code for most bacteria and archaea 
+--cpus 8 \                                                                                  # Number of CPU cores utilised for annotation by Prokka
+./barcode04/uc_4_out/barcode04.fasta                                                        # Input FASTA file
+
 
 # deactivate conda environment
-
 conda deactivate
 
