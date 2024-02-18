@@ -24,7 +24,9 @@ cd ~
 cd /workhere/students_2023/group4/all_longreads
 
 # run the unicycler command
-unicycler -l all_lr.fastq -o test_output
+unicycler \
+-l all_lr.fastq \   # Input long reads file
+-o test_output      # Output directory
 
 # deactivate conda environment
 conda deactivate
