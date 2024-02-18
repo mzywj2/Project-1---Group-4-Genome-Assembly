@@ -26,7 +26,12 @@ cd ~
 cd /workhere/students_2023/group4/shortreads
 
 # run the unicycler command
-unicycler --kmers 25,55,71 -t 8 -1 R1_short_reads_allfiles.fastq.gz -2 R2_short_reads_allfiles.fastq.gz -o unicycler_sr_out
+unicycler \
+--kmers 25,55,71 \
+-t 8 \
+-1 R1_short_reads_allfiles.fastq.gz \
+-2 R2_short_reads_allfiles.fastq.gz \
+-o unicycler_sr_out
 
 # deactivate conda environment
 conda deactivate
