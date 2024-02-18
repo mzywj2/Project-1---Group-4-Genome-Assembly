@@ -18,7 +18,11 @@ source $HOME/.bash_profile
 conda activate /shared/conda/busco
 
 # run the busco command
-busco -i /workhere/students_2023/group4/all_longreads/lr_p_uc_assembly.fasta -l /shared/conda/busco_downloads/lineages/archaea_odb10 -o /longreads -m genome
+busco \
+-i /workhere/students_2023/group4/all_longreads/lr_p_uc_assembly.fasta \
+-l /shared/conda/busco_downloads/lineages/archaea_odb10 \
+-o /longreads \
+-m genome
 
 # deactivate conda environment:
 conda deactivate
