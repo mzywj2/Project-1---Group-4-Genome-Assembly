@@ -24,11 +24,11 @@ conda activate /shared/conda/shared
 cd /workhere/students_2023/group4/all_longreads/np_out_lr
 
 # run the NanoPlot command
-NanoPlot \
---threads 8 \
---fastq /workhere/students_2023/group4/all_longreads/allfiles.fastq.gz
---plots kde dot \
--o /workhere/students_2023/group4/all_longreads/np_out_lr
+NanoPlot \                                                              
+--threads 8 \                                                            # Specify the number of CPU cores that NanoPlot is allowed to use 
+--fastq /workhere/students_2023/group4/all_longreads/allfiles.fastq.gz \ # Input file path
+--plots kde dot \                                                        # The type of plot that NanoPlot should generate: this option is Kernel Density Estimation and dot plot
+-o /workhere/students_2023/group4/all_longreads/np_out_lr                # The path to the output directory
 
 # deactivate conda environment
 conda deactivate
