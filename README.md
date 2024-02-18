@@ -89,7 +89,10 @@ For further detail about NanoPlot, refer to the NanoPlot GitHub Repository: http
 
 #### Example Usage:
 ```
-NanoPlot -t 8 --fastq FAQ09231_pass_barcode04_a6a5014a_0.fastq.gz --plots kde
+NanoPlot \                                              # NanoPlot command 
+-t 8 \                                                  # Specify the number of CPU cores that NanoPlot is allowed to use 
+--fastq FAQ09231_pass_barcode04_a6a5014a_0.fastq.gz \   # Input file 
+--plots kde                                             # Type of plot
 
 ```
 
@@ -212,7 +215,9 @@ pip3 install --upgrade quast
 #### Example Usage:
 
 ```
-python /shared/conda/shared/bin/quast all_longreads/lr_pass_output2/lr_pass.fasta \
+python \
+/shared/conda/shared/bin/quast \
+all_longreads/lr_pass_output2/lr_pass.fasta \
 shortreads/unicycler_sr_out/sr_uc_assembly.fasta \
 all_longreads/all_unicycler_output/lr_uc_assembly.fasta \
 hybrid_uc_out/h_uc_assembly.fasta \
@@ -291,6 +296,15 @@ For further detail regarding GenoVi, refer to the GenoVi GitHub Repository: http
 #### Example Usage:
 
 ```
+genovi \
+-i barcode04.gbk \   # GenBank input file path.
+-o genovi_04 \       # Output file name. Default: genovi.
+-s complete \        # --status. “complete” or “draft”. Complete genomes are drawn as separate circles for each contig/replicon.
+-bc white \          # Background colour for visualisation
+-cs ocean \          # Colour scheme.
+-te \                # Use of text export
+--size               # Displays the genome size of each independent circular representation.
+
 ```
 
 
