@@ -25,8 +25,14 @@ cd ~
 cd /workhere/students_2023/group4/matt_data
 
 # quast command
-python /shared/conda/shared/bin/quast barcode04/uc_4_out/b4.fasta \
-barcode09/uc_b9_out/b9.fasta barcode10/uc_b10_out/b10.fasta -r barcode10/uc_b10_out/ref_fastas/hm_fullwplas.fasta -g barcode10/uc_b10_out/ref_fastas/hm_fullwplas.gff3 -o allvshm_quast_out
+python \
+/shared/conda/shared/bin/quast \                           # Path to the quast file
+barcode04/uc_4_out/b4.fasta \                              # Path to the input FASTA file for Barcode 04
+barcode09/uc_b9_out/b9.fasta \                             # Path to the input FASTA file for Barcode 09
+barcode10/uc_b10_out/b10.fasta \                           # Path to the input FASTA file for Barcode 10
+-r barcode10/uc_b10_out/ref_fastas/hm_fullwplas.fasta \    # Path to the reference FASTA file 
+-g barcode10/uc_b10_out/ref_fastas/hm_fullwplas.gff3 \     # Path to the GFF3 file
+-o allvshm_quast_out                                       # Output directory
 
 # deactivate conda environment
 conda deactivate
