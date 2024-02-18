@@ -21,10 +21,12 @@ source $HOME/.bash_profile
 conda activate /shared/conda/shared
 
 cd /workhere/students_2023/group4/all_longreads
-# test flye
-miniasm -f \
-all_lr.fastq.gz \
-minimap_all_lr.paf.gz > miniasm_all_lr.gfa
+# run the miniasm command
+miniasm \
+-f \                      # Specifies the input format, in this option it is a fastq format 
+all_lr.fastq.gz \         # Input fastq file
+minimap_all_lr.paf.gz \   # Input PAF file containing the minimap2 alignments 
+> miniasm_all_lr.gfa      # Redirects the miniasm assemblt to a GFA format with the specified file name
 
 # deactivate conda environment
 conda deactivate
