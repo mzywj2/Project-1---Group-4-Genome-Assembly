@@ -46,12 +46,15 @@ To view the report go to your web browser and type:
 http://<ip address>:34567  - which is the ip and your personalised the hpc extension
 
 
+
 ### Miniasm Figure:
 The following example image illustrates a GFA file produced by Miniasm (visualised using Bandage) following Minimap2 assembly of short read data.
 
 ![Miniasm Image for a Short Read](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/SR%20Miniasm.png)
 
-*
+*Image Source: [Kavithi Jayasundara]*
+
+
 
 ### Unicycler Figure:
 The example image below illustrates a GFA file produced by Unicycler which has been visualised using Bandage. Unicycler is specifically designed for the assembly of bacterial genomes. Both short and long reads as well as combined (hybrid) reads can be employed by Unicycler
@@ -59,12 +62,17 @@ The example image below illustrates a GFA file produced by Unicycler which has b
 
 ![Unicycler Image for a Short Read](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/SR%20Unicycler.png)
 
+*Image Source: [Kavithi Jayasundara]*
+
+
+
 ### Quast Figure:
 The example image below is an output file produced via QUAST analysis comparing all long read, pass only long read, short read, and hybrid unicycler output.
 
 
 ![QUAST Image comparing all long read, pass long read, short read and hybrid unicycler output](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/QUAST.png)
 
+*Image Source: [Franklyn Brown]*
 
 
 
@@ -73,6 +81,9 @@ The following example image illustrates an archaeal circular genome representati
 
 
 ![GenoVi Image of an Archaeal Circular Genome Representation](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/genovi_04.png)
+
+*Image Source: [Charlotte Anning]*
+
 
 
 ## Dependencies
