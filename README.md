@@ -33,6 +33,7 @@ Example name: *FAQ09231_pass_barcode04_a6a5014a_0.fastq.gz* and fail one
 
 ![NanoPlot KDE plot Example Image](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/newplot.png) 
 
+*Image Source: [Charlotte Anning (Group 4)]
 
 The example plot above shows a KDE plot (Kernel Density Estimation) for Nanopore long read data, comparing read length with average read quality.
 
@@ -72,6 +73,19 @@ The following example image illustrates an archaeal circular genome representati
 
 
 ![GenoVi Image of an Archaeal Circular Genome Representation](https://github.com/mzywj2/Project-1---Group-4-Genome-Assembly/blob/main/genovi_04.png)
+
+
+## Dependencies
+
+- **NanoPlot**: Version 1.42
+- **Minimap2**:Version 2.26
+- **Miniasm**:Version 0.3
+- **Bandage**:Version 0.8.1
+- **Unicycler**:Version 0.5
+- **Quast**:Version 5.2
+- **Busco**:Version 5.6.1
+- **Prokka**:Version 1.14.6
+- **GenoVi**:Version 0.69.9
 
 
 ## Installation
@@ -256,7 +270,6 @@ busco \
 
 
 ### Prokka
-Version prokka 1.14.6
 
 Prokka can be installed using Bioconda:
 
@@ -361,3 +374,4 @@ If you found an issue or would like to submit an improvement to this project, pl
 - Busco: Busco GutHub Repository: https://github.com/WenchaoLin/BUSCO-Mod.git
 - Prokka: Prokka GitHub Repository: https://github.com/tseemann/prokka.git
 - GenoVi: GenoVi GitHub Repository: https://github.com/robotoD/GenoVi.git
+- Images: Charlotte Anning and Franklyn Brown
